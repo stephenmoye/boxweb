@@ -1,0 +1,82 @@
+// SPINNING CUBE TRANSITIONS
+.flip-container {
+  perspective: 500px;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+  transition-delay: 0s;
+}
+
+.front,
+.back {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+/* flip speed */
+.flipper {
+  transition: 0.5s;
+  transition-delay: 0.75s ;
+  transform-style: preserve-3d;
+
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+}
+
+/* hide back pane on flip */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+// FORM SIDEBAR TRANSITIONS
+
+.form-open {
+  animation-name: form-open;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+.form-close {
+  animation-name: form-close;
+  animation-duration: 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes form-open {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(30%);
+  }
+}
+
+@keyframes form-close {
+  0% { 
+    transform: translate(30%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+// // // // // // //

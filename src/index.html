@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B0XWEB - Web Design - Web Development</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body id="main" class="form-close">
+    <div id="sidebar" class="sidebar" onclick="openForm()">
+        <button id="side-btn" class="form-close">
+            <span class="open">
+                < </span>
+                    <span class="close"> > </span>
+        </button>
+
+        <div id="form" class="form-close">
+            <form>
+                <h3>Contact Us</h3>
+                <div>
+                    <!-- <i data-feather="star"></i> -->
+                    <label for="company">Company</label>
+                    <input type="text" id="name" name="company">
+                </div>
+                <div>
+                    <!-- <i data-feather="star"></i> -->
+                    <label for="email">Email </label>
+                    <input id="emailAddress" type="email">
+                </div>
+                <div>
+                    <!-- <i data-feather="star"></i> -->
+                    <label for="url">Website </label>
+                    <input id="myURL" type="url">
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <header>
+            <!-- <img src="img/logo.png"> -->
+            <img src="http://stephenmoye.com/img/box-logo-color.png" id="logo" alt="B0X LOGO">
+            <nav>
+                <ul>
+                    <!-- <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li> -->
+                    <li>
+                        <a onclick="openForm()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="hero">
+            <div id="content">
+                <h1>Your website.
+                    <br> Simplified.</h1>
+                <p>When it comes to running a business, you have plenty to think about. However, if your online presence has
+                    been put on the backburner, you could be falling behind.</p>
+                <p>Let <span>boxweb</span> do the thinking, so you can focus on what matters.</p>
+                <p>Get started today by reaching out to us with your goals and ideas, and we'll take care of the rest.</p>
+            </div>
+            <!-- <i id="logo-img" class="front" data-feather="box"></i> -->
+            <div class="cube">
+                <div class="scene">
+                    <div class="object">
+                        <div class="face f1"></div>
+                        <div class="face f2"></div>
+                        <div class="face f3"></div>
+                        <div class="face f4"></div>
+                        <div class="face f5"></div>
+                        <div class="face f6"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="img/logo.png" id="image"> -->
+
+        </section>
+        <ul id="features">
+            <li class="flip-container">
+                <h2>All You Need.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="sun"></i>
+                    <i class="back" data-feather="star"></i>
+                </div>
+                <p>We work with you to find the perfect solution to take your website to the next level.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Modernize.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="archive"></i>
+                    <i class="back" data-feather="gift"></i>
+                </div>
+                <p>Let us upgrade your existing website with new features and a modern look.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Sell Online.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="shopping-bag"></i>
+                    <i class="back" data-feather="dollar-sign"></i>
+                </div>
+                <p>Increase sales and expand your customer base with an all-in-one eCommerce website.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Get Heard.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="volume-1"></i>
+                    <i class="back" data-feather="volume-2"></i>
+                </div>
+                <p>Need a News website or Blog? We've got you covered.</p>
+            </li>
+        </ul>
+
+        <!-- <div class="section">
+            <h2>Something!</h2>
+            <p>When it comes to running a business, you have plenty to think about. If you don't already have a strong online
+                presence, you could be falling behind. Let us do the thinking to provide the best solution for your business.
+                As the world relies more on the internet, it is important to make sure you are keeping up. Get started today
+                by reaching out to B1TB0X with your goals and ideas, and we'll take care of the rest.</p>
+            <button onclick="openForm()" class="center">Get in touch</button>
+        </div> -->
+
+        <ul id="features">
+            <li class="flip-container">
+                <h2>Stay Connected.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="cloud"></i>
+                    <i class="back" data-feather="cloud-lightning"></i>
+                </div>
+                <p>We provide affordable domain management and hosting with 99.9% reliability.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Worry Free.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="terminal"></i>
+                    <i class="back" data-feather="refresh-cw"></i>
+                </div>
+                <p>For a low monthly rate, we will maintain and optimize all aspects of your website.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Find Yourself.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="search"></i>
+                    <i class="back" data-feather="target"></i>
+                </div>
+                <p>Get found with our SEO and analytics consultation services.</p>
+            </li>
+            <li class="flip-container">
+                <h2>Get Started.</h2>
+                <div class="flipper">
+                    <i class="front" data-feather="arrow-right-circle"></i>
+                    <i class="back" data-feather="arrow-down-circle"></i>
+                </div>
+                <button onclick="openForm()" class="center">Contact Us</button>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
